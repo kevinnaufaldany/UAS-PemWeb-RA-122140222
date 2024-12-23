@@ -287,7 +287,7 @@ class Database
 - Menggunakan session untuk menyimpan informasi pengguna.
 
 **Hasil Implementasi:**
-![Session Management](images/session_management.png)
+![Session Management](/public/assets/6.png)
 
 ```php
 // File: state_management.php
@@ -309,7 +309,7 @@ if (isset($_GET['reset'])) {
 
 **Hasil Implementasi:**
 - Buat fungsi untuk menetapkan, mendapatkan, dan menghapus cookie.
-![Cookie Management](/public/assets/3.png)
+![Cookie Management](/public/assets/4.png)
 
 ```javascript
 // File: browser_storage.html
@@ -358,7 +358,7 @@ if (isset($_GET['reset'])) {
         }
 ```
 - Gunakan browser storage untuk menyimpan informasi secara lokal.
-![Cookie Management](/public/assets/4.png)
+![Cookie Management](/public/assets/5.png)
 ```php
 // File: cookie_management.php
 <?php
