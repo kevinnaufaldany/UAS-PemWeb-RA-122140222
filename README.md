@@ -12,6 +12,7 @@
 - Melakukan manipulasi DOM menggunakan JavaScript untuk memperbarui elemen secara dinamis.
 
 **Hasil Implementasi:**
+
 ![Manipulasi DOM](/public/assets/1.png)
 
 ```html
@@ -116,6 +117,7 @@
 - Validasi input sebelum diproses oleh PHP.
 
 **Hasil Implementasi:**
+
 ![Event Handling](/public/assets/2.png)
 
 ```javascript
@@ -287,6 +289,7 @@ class Database
 - Menggunakan session untuk menyimpan informasi pengguna.
 
 **Hasil Implementasi:**
+
 ![Session Management](/public/assets/6.png)
 
 ```php
@@ -424,16 +427,93 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ```
 
 ### **Bagian Bonus: Hosting Aplikasi Web**
-- Menggunakan hosting seperti GitHub Pages atau Netlify.
-- Menyediakan konfigurasi untuk keamanan.
+---
+- Apa langkah-langkah yang Anda lakukan untuk meng-host aplikasi web Anda?
+---
+### Langkah-langkah untuk Meng-host Aplikasi Web
+1. **Membeli Domain dan Hosting**
+   - Anda telah membeli domain **tokodelfy.web.id** dan memilih layanan hosting IDCloudHost.com.
+
+2. **Akses cPanel**
+   - Masuk ke cPanel, antarmuka manajemen hosting yang memudahkan pengelolaan file, database, email, dan konfigurasi lainnya.
+
+3. **Upload File Aplikasi Web**
+   - Gunakan File Manager di cPanel atau aplikasi FTP (misalnya FileZilla) untuk mengunggah file aplikasi web ke direktori root (**public_html**).
+
+4. **Pengaturan Database**
+   - Jika aplikasi Anda membutuhkan database, buat database melalui cPanel (**MySQL Databases**) dan atur file konfigurasi aplikasi agar terhubung ke database tersebut.
+
+5. **Konfigurasi DNS**
+   - Pastikan domain diarahkan ke server hosting Anda melalui pengaturan DNS (**A Record**, **CNAME**, atau **Nameservers**).
+
+6. **Pengujian Aplikasi**
+   - Setelah semua langkah selesai, uji aplikasi web untuk memastikan semuanya berjalan dengan baik.
+---
+
+- Pilih penyedia hosting web yang menurut Anda paling cocok untuk aplikasi web Anda.
+---
+
+### Pemilihan Penyedia Hosting
+Anda memilih **IDCloudHost** karena alasan berikut:
+- **Reliabilitas:** Server yang stabil dan performa tinggi.
+- **Kemudahan Penggunaan:** Dengan cPanel, pengelolaan hosting menjadi lebih mudah bahkan bagi pemula.
+- **UI yang Mudah Dimengerti:** Antarmuka pengguna yang ramah membuat proses konfigurasi lebih cepat dan efisien.
+- **Dukungan Teknis:** Layanan pelanggan aktif 24/7 dan siap membantu jika ada masalah.
+
+---
+
+- Bagaimana Anda memastikan keamanan aplikasi web yang Anda host?
+---
+
+### Keamanan Aplikasi Web yang Dihost
+Untuk menjaga keamanan aplikasi web **tokodelfy.web.id**, langkah-langkah berikut diterapkan:
+
+1. **Sertifikat SSL**
+   - Aktifkan SSL melalui cPanel agar koneksi antara pengguna dan server dienkripsi (**HTTPS**).
+
+2. **Update Rutin**
+   - Selalu perbarui framework, plugin, atau perangkat lunak yang digunakan dalam aplikasi untuk mencegah kerentanan.
+
+3. **Proteksi Folder**
+   - Atur hak akses file/folder di cPanel (**chmod**) untuk mencegah akses tidak sah.
+
+4. **Firewall dan Keamanan Server**
+   - Manfaatkan fitur keamanan bawaan cPanel seperti ModSecurity, dan tambahkan firewall jika perlu.
+
+5. **Backup Berkala**
+   - Atur backup otomatis di cPanel untuk memulihkan data jika terjadi serangan.
+
+6. **Pemantauan Aktivitas**
+   - Gunakan log di cPanel untuk memantau aktivitas dan mendeteksi potensi ancaman.
+
+---
+
+- Jelaskan konfigurasi server yang Anda terapkan untuk mendukung aplikasi web Anda.
+
+--- 
+### Konfigurasi Server
+Berikut konfigurasi server yang diterapkan melalui cPanel:
+
+1. **Pengaturan PHP**
+   - Sesuaikan versi PHP yang kompatibel dengan aplikasi Anda melalui menu "Select PHP Version" di cPanel.
+
+2. **Upload Limit dan Execution Time**
+   - Ubah **upload_max_filesize**, **post_max_size**, dan **max_execution_time** di konfigurasi PHP jika aplikasi membutuhkan.
+
+3. **Email Konfigurasi**
+   - Jika aplikasi menggunakan email, atur SMTP dengan layanan email yang disediakan IDCloudHost.
+
+4. **Pengaturan Cron Jobs**
+   - Atur cron job di cPanel untuk menjalankan tugas otomatis seperti backup atau pembaruan data.
+
+5. **Cache dan Optimasi**
+   - Aktifkan cache seperti LiteSpeed (jika tersedia) untuk meningkatkan performa aplikasi.
+
+6. **Domain dan Subdomain**
+   - Tambahkan subdomain atau redirect domain jika diperlukan.
+
+---
 
 **Hasil Implementasi:**
-![Hosting Setup](images/hosting_setup.png)
 
-```bash
-# Deploy menggunakan GitHub Pages
-$ git init
-$ git add .
-$ git commit -m "Deploy"
-$ git push origin main
-```
+
