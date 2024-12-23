@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Storage Management</title>
+    <script>
+        // Fungsi untuk set localStorage
+        function setLocalStorage() {
+            const key = document.getElementById("local_key").value;
+            const value = document.getElementById("local_value").value;
+            localStorage.setItem(key, value);
+            alert(`localStorage '${key}' disimpan dengan nilai: ${value}`);
+        }
+
+        // Fungsi untuk get localStorage
+        function getLocalStorage() {
+            const key = document.getElementById("local_key").value;
+            const value = localStorage.getItem(key);
+            alert(value ? `localStorage '${key}': ${value}` : `localStorage '${key}' tidak ditemukan.`);
+        }
+
+        // Fungsi untuk delete localStorage
+        function deleteLocalStorage() {
+            const key = document.getElementById("local_key").value;
+            localStorage.removeItem(key);
+            alert(`localStorage '${key}' dihapus.`);
+        }
+
+        // Fungsi untuk set sessionStorage
+        function setSessionStorage() {
+            const key = document.getElementById("session_key").value;
+            const value = document.getElementById("session_value").value;
+            sessionStorage.setItem(key, value);
+            alert(`sessionStorage '${key}' disimpan dengan nilai: ${value}`);
+        }
+
+        // Fungsi untuk get sessionStorage
+        function getSessionStorage() {
+            const key = document.getElementById("session_key").value;
+            const value = sessionStorage.getItem(key);
+            alert(value ? `sessionStorage '${key}': ${value}` : `sessionStorage '${key}' tidak ditemukan.`);
+        }
+
+        // Fungsi untuk delete sessionStorage
+        function deleteSessionStorage() {
+            const key = document.getElementById("session_key").value;
+            sessionStorage.removeItem(key);
+            alert(`sessionStorage '${key}' dihapus.`);
+        }
+    </script>
+</head>
+<body>
+    <h1>Pengelolaan Browser Storage</h1>
+
+    <h2>Local Storage</h2>
+    <label for="local_key">Key:</label>
+    <input type="text" id="local_key" placeholder="Masukkan key" required>
+    <br>
+    <label for="local_value">Value:</label>
+    <input type="text" id="local_value" placeholder="Masukkan value">
+    <br>
+    <button onclick="setLocalStorage()">Set Local Storage</button>
+    <button onclick="getLocalStorage()">Get Local Storage</button>
+    <button onclick="deleteLocalStorage()">Delete Local Storage</button>
+
+    <h2>Session Storage</h2>
+    <label for="session_key">Key:</label>
+    <input type="text" id="session_key" placeholder="Masukkan key" required>
+    <br>
+    <label for="session_value">Value:</label>
+    <input type="text" id="session_value" placeholder="Masukkan value">
+    <br>
+    <button onclick="setSessionStorage()">Set Session Storage</button>
+    <button onclick="getSessionStorage()">Get Session Storage</button>
+    <button onclick="deleteSessionStorage()">Delete Session Storage</button>
+</body>
+</html>

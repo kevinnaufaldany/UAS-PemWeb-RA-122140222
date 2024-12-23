@@ -1,0 +1,40 @@
+body {
+   font-family: Arial, sans-serif;
+   background-color: #f8f9fa;
+}
+
+h2 {
+   color: #0d6efd;
+}
+
+   /* Mengatur gambar berada di luar card dan di tengah */
+.img-container {
+   display: flex;
+   justify-content: center; /* Pusatkan gambar secara horizontal */
+   margin-bottom: 0; /* Menghilangkan jarak antara gambar dan card */
+}
+
+/* Card khusus dengan gaya custom */
+.card-custom {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 80%; /* Lebar card 80% dari lebar layar */
+    max-width: 500px; /* Maksimal lebar card 500px */
+    height: auto; /* Tinggi card otomatis menyesuaikan dengan konten */
+    margin: 0 auto; /* Card terpusat secara horizontal */
+}
+
+/* Styling untuk gambar */
+.card-img-top {
+    width: 100%; /* Gambar akan menyesuaikan dengan lebar container */
+    max-width: 150px; /* Membatasi ukuran gambar */
+    object-fit: contain; /* Gambar tidak terdistorsi */
+    display: block; /* Pastikan gambar adalah elemen block */
+    margin: 0 auto; Pusatkan gambar secara horizontal
+}
+
+
+
