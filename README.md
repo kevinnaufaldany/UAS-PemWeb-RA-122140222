@@ -433,12 +433,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ### Langkah-langkah untuk Meng-host Aplikasi Web
 1. **Membeli Domain dan Hosting**
    - Anda telah membeli domain **tokodelfy.web.id** dan memilih layanan hosting IDCloudHost.com.
+   ![Event Handling](/public/assets/7.png)
 
 2. **Akses cPanel**
    - Masuk ke cPanel, antarmuka manajemen hosting yang memudahkan pengelolaan file, database, email, dan konfigurasi lainnya.
+   ![Event Handling](/public/assets/8.png)
 
 3. **Upload File Aplikasi Web**
    - Gunakan File Manager di cPanel atau aplikasi FTP (misalnya FileZilla) untuk mengunggah file aplikasi web ke direktori root (**public_html**).
+   ![alt text](image.png)
 
 4. **Pengaturan Database**
    - Jika aplikasi Anda membutuhkan database, buat database melalui cPanel (**MySQL Databases**) dan atur file konfigurasi aplikasi agar terhubung ke database tersebut.
